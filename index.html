@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Image Resize</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- style -->
+   <link rel="stylesheet/less" href="style/style.less">
+   <!-- script -->
+   <script src="script/less.min.js"></script>
+</head>
+<body>
+   <header>
+      <div class="title">Image Resize</div>
+      <div>
+         <i id="warn" class="fa fa-warning"></i>
+      </div>
+      <div class="ripple" onclick="Darkmode()">
+         <i class="fal fa-moon-over-sun"></i>
+      </div>
+   </header>
+   <main>
+      <div id="preview"></div><br>
+      <label id="upload" class="ripple" for="file">
+         <span>Tap To Upload</span>
+         <i class="fal fa-file-arrow-up"></i>
+         <input type="file" id="file" hidden accept="image">
+      </label><br>
+      <div id="size-preview">
+         <div id="width-preview"></div>
+         <div id="height-preview"></div>
+      </div><br>
+      <div id="sizes">
+         <div id="tab">
+            <div class="tab" onclick="page('range')">Range</div>
+            <div class="tab on" onclick="page('input')">Input</div>
+         </div>
+         <hr>
+         <div id="range" class="page">
+            <input type="range" id="range-size" min="0.01" max="2" step="0.01" value="1">
+         </div>
+         <div id="input" class="page on">
+            <input type="number" id="width" placeholder="Width">
+            <input type="number" id="height" placeholder="Height">
+         </div>
+      </div><br>
+      <div id="download" class="ripple">Download</div><br>
+   </main>
+   <footer>
+      Made by
+      <a class="ripple" href="https://leafweb.github.io/" target="_blank">
+         Leafweb
+         <svg style="vertical-align: middle" width="3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+            <g>
+               <rect id="a" fill="var(--primary)" x="150" y="150" width="700" height="700" rx="130" />
+               <use href="#a" transform="rotate(30 500 500)" />
+               <use href="#a" transform="rotate(60 500 500)" />
+               <animateTransform attributeName="transform" type="rotate" from="0 500 500" to="360 500 500" dur="30s" repeatCount="indefinite" />
+            </g>
+            <path fill="var(--on-primary)" transform="scale(0.8)translate(125,160)" d="M 500 700 C 300 700 200 500 50 400 C 250 350 400 400 500 600 C 600 400 750 350 950 400 C 800 500 700 700 500 700z M 500 700 C 200 700 350 300 500 100 C 650 300 800 700 500 700z M 480 680 L 520 680 Q 520 860 400 800 C 460 820 480 820 480 680z" />
+         </svg>
+      </a>
+   </footer>
+   <!-- script -->
+   <script src="script/Mushroom.js"></script>
+   <script src="script/ripple.js"></script>
+   <script src="script/main.js"></script>
+   <script>
+      //tab & page
+      var tab = document.querySelectorAll('.tab');
+      function page(name) {
+         tab.forEach(x => x.classList.remove('on'))
+         event.currentTarget.classList.add('on');
+         var page = document.querySelectorAll('.page');
+         page.forEach(x => {
+            x.classList.remove('on')
+         });
+         document.querySelector(`#${name}`).classList.add('on');
+      }
+   </script>
+</body>
+</html>
