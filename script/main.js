@@ -24,7 +24,7 @@ body.style.backgroundImage = (mode) ? 'url(/image/bg-dark.png)' : 'url(/image/bg
 function Darkmode() {
    M.toggleMode();
    localStorage.setItem('darkMode', M.darkmode);
-   body.style.backgroundImage = (M.darkmode) ? 'url(/image/bg-dark.png)' : 'url(/image/bg-light.png)';
+   body.style.backgroundImage = (M.darkmode) ? 'url(image/bg-dark.png)' : 'url(/image/bg-light.png)';
 }
 
 file.onchange = () => {
