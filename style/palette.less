@@ -1,0 +1,983 @@
+//theme color;
+@primary: var(--primary);
+@on-primary: var(--on-primary);
+@primary-container: var(--primary-container);
+@on-primary-container: var(--on-primary-container);
+@secondary: var(--secondary);
+@on-secondary: var(--on-secondary);
+@secondary-container: var(--secondary-container);
+@on-secondary-container: var(--on-secondary-container);
+@tertiary: var(--tertiary);
+@on-tertiary: var(--on-tertiary);
+@tertiary-container: var(--tertiary-container);
+@on-tertiary-container: var(--on-tertiary-container);
+@error: var(--error);
+@on-error: var(--on-error);
+@error-container: var(--error-container);
+@on-error-container: var(--on-error-container);
+@surface: var(--surface);
+@on-surface: var(--on-surface);
+@surface-variant: var(--surface-variant);
+@on-surface-variant: var(--on-surface-variant);
+@glass: var(--glass);
+@on-glass: var(--on-glass);
+@glass-variant: var(--glass-variant);
+@on-glass-variant: var(--on-glass-variant);
+@background: var(--background);
+@on-background: var(--on-background);
+@outline: var(--outline);
+//palette
+@primary-0: var(--primary-0);
+@primary-5: var(--primary-5);
+@primary-10: var(--primary-10);
+@primary-15: var(--primary-15);
+@primary-20: var(--primary-20);
+@primary-25: var(--primary-25);
+@primary-30: var(--primary-30);
+@primary-35: var(--primary-35);
+@primary-40: var(--primary-40);
+@primary-45: var(--primary-45);
+@primary-50: var(--primary-50);
+@primary-55: var(--primary-55);
+@primary-60: var(--primary-60);
+@primary-65: var(--primary-65);
+@primary-70: var(--primary-70);
+@primary-75: var(--primary-75);
+@primary-80: var(--primary-80);
+@primary-85: var(--primary-85);
+@primary-90: var(--primary-90);
+@primary-95: var(--primary-95);
+@primary-100: var(--primary-100);
+@secondary-0: var(--secondary-0);
+@secondary-5: var(--secondary-5);
+@secondary-10: var(--secondary-10);
+@secondary-15: var(--secondary-15);
+@secondary-20: var(--secondary-20);
+@secondary-25: var(--secondary-25);
+@secondary-30: var(--secondary-30);
+@secondary-35: var(--secondary-35);
+@secondary-40: var(--secondary-40);
+@secondary-45: var(--secondary-45);
+@secondary-50: var(--secondary-50);
+@secondary-55: var(--secondary-55);
+@secondary-60: var(--secondary-60);
+@secondary-65: var(--secondary-65);
+@secondary-70: var(--secondary-70);
+@secondary-75: var(--secondary-75);
+@secondary-80: var(--secondary-80);
+@secondary-85: var(--secondary-85);
+@secondary-90: var(--secondary-90);
+@secondary-95: var(--secondary-95);
+@secondary-100: var(--secondary-100);
+@tertiary-0: var(--tertiary-0);
+@tertiary-5: var(--tertiary-5);
+@tertiary-10: var(--tertiary-10);
+@tertiary-15: var(--tertiary-15);
+@tertiary-20: var(--tertiary-20);
+@tertiary-25: var(--tertiary-25);
+@tertiary-30: var(--tertiary-30);
+@tertiary-35: var(--tertiary-35);
+@tertiary-40: var(--tertiary-40);
+@tertiary-45: var(--tertiary-45);
+@tertiary-50: var(--tertiary-50);
+@tertiary-55: var(--tertiary-55);
+@tertiary-60: var(--tertiary-60);
+@tertiary-65: var(--tertiary-65);
+@tertiary-70: var(--tertiary-70);
+@tertiary-75: var(--tertiary-75);
+@tertiary-80: var(--tertiary-80);
+@tertiary-85: var(--tertiary-85);
+@tertiary-90: var(--tertiary-90);
+@tertiary-95: var(--tertiary-95);
+@tertiary-100: var(--tertiary-100);
+@error-0: var(--error-0);
+@error-5: var(--error-5);
+@error-10: var(--error-10);
+@error-15: var(--error-15);
+@error-20: var(--error-20);
+@error-25: var(--error-25);
+@error-30: var(--error-30);
+@error-35: var(--error-35);
+@error-40: var(--error-40);
+@error-45: var(--error-45);
+@error-50: var(--error-50);
+@error-55: var(--error-55);
+@error-60: var(--error-60);
+@error-65: var(--error-65);
+@error-70: var(--error-70);
+@error-75: var(--error-75);
+@error-80: var(--error-80);
+@error-85: var(--error-85);
+@error-90: var(--error-90);
+@error-95: var(--error-95);
+@error-100: var(--error-100);
+@surface-0: var(--surface-0);
+@surface-5: var(--surface-5);
+@surface-10: var(--surface-10);
+@surface-15: var(--surface-15);
+@surface-20: var(--surface-20);
+@surface-25: var(--surface-25);
+@surface-30: var(--surface-30);
+@surface-35: var(--surface-35);
+@surface-40: var(--surface-40);
+@surface-45: var(--surface-45);
+@surface-50: var(--surface-50);
+@surface-55: var(--surface-55);
+@surface-60: var(--surface-60);
+@surface-65: var(--surface-65);
+@surface-70: var(--surface-70);
+@surface-75: var(--surface-75);
+@surface-80: var(--surface-80);
+@surface-85: var(--surface-85);
+@surface-90: var(--surface-90);
+@surface-95: var(--surface-95);
+@surface-100: var(--surface-100);
+@surface-variant-0: var(--surface-variant-0);
+@surface-variant-5: var(--surface-variant-5);
+@surface-variant-10: var(--surface-variant-10);
+@surface-variant-15: var(--surface-variant-15);
+@surface-variant-20: var(--surface-variant-20);
+@surface-variant-25: var(--surface-variant-25);
+@surface-variant-30: var(--surface-variant-30);
+@surface-variant-35: var(--surface-variant-35);
+@surface-variant-40: var(--surface-variant-40);
+@surface-variant-45: var(--surface-variant-45);
+@surface-variant-50: var(--surface-variant-50);
+@surface-variant-55: var(--surface-variant-55);
+@surface-variant-60: var(--surface-variant-60);
+@surface-variant-65: var(--surface-variant-65);
+@surface-variant-70: var(--surface-variant-70);
+@surface-variant-75: var(--surface-variant-75);
+@surface-variant-80: var(--surface-variant-80);
+@surface-variant-85: var(--surface-variant-85);
+@surface-variant-90: var(--surface-variant-90);
+@surface-variant-95: var(--surface-variant-95);
+@surface-variant-100: var(--surface-variant-100);
+@glass-0: var(--glass-0);
+@glass-5: var(--glass-5);
+@glass-10: var(--glass-10);
+@glass-15: var(--glass-15);
+@glass-20: var(--glass-20);
+@glass-25: var(--glass-25);
+@glass-30: var(--glass-30);
+@glass-35: var(--glass-35);
+@glass-40: var(--glass-40);
+@glass-45: var(--glass-45);
+@glass-50: var(--glass-50);
+@glass-55: var(--glass-55);
+@glass-60: var(--glass-60);
+@glass-65: var(--glass-65);
+@glass-70: var(--glass-70);
+@glass-75: var(--glass-75);
+@glass-80: var(--glass-80);
+@glass-85: var(--glass-85);
+@glass-90: var(--glass-90);
+@glass-95: var(--glass-95);
+@glass-100: var(--glass-100);
+@glass-variant-0: var(--glass-variant-0);
+@glass-variant-5: var(--glass-variant-5);
+@glass-variant-10: var(--glass-variant-10);
+@glass-variant-15: var(--glass-variant-15);
+@glass-variant-20: var(--glass-variant-20);
+@glass-variant-25: var(--glass-variant-25);
+@glass-variant-30: var(--glass-variant-30);
+@glass-variant-35: var(--glass-variant-35);
+@glass-variant-40: var(--glass-variant-40);
+@glass-variant-45: var(--glass-variant-45);
+@glass-variant-50: var(--glass-variant-50);
+@glass-variant-55: var(--glass-variant-55);
+@glass-variant-60: var(--glass-variant-60);
+@glass-variant-65: var(--glass-variant-65);
+@glass-variant-70: var(--glass-variant-70);
+@glass-variant-75: var(--glass-variant-75);
+@glass-variant-80: var(--glass-variant-80);
+@glass-variant-85: var(--glass-variant-85);
+@glass-variant-90: var(--glass-variant-90);
+@glass-variant-95: var(--glass-variant-95);
+@glass-variant-100: var(--glass-variant-100);
+//link
+.background {
+   background: @background;
+   color: @on-background;
+}
+.on-background {
+   background: @on-background;
+   color: @background;
+}
+.primary {
+   background: @primary;
+   color: @on-primary;
+}
+.on-primary {
+   background: @on-primary;
+   color: @primary;
+}
+.primary-container {
+   background: @primary-container;
+   color: @on-primary-container;
+}
+.on-primary-container {
+   background: @on-primary-container;
+   color: @primary-container;
+}
+.secondary {
+   background: @secondary;
+   color: @on-secondary;
+}
+.on-secondary {
+   background: @on-secondary;
+   color: @secondary;
+}
+.secondary-container {
+   background: @secondary-container;
+   color: @on-secondary-container;
+}
+.on-secondary-container {
+   background: @on-secondary-container;
+   color: @secondary-container;
+}
+.tertiary {
+   background: @tertiary;
+   color: @on-tertiary;
+}
+.on-tertiary {
+   background: @on-tertiary;
+   color: @tertiary;
+}
+.tertiary-container {
+   background: @tertiary-container;
+   color: @on-tertiary-container;
+}
+.on-tertiary-container {
+   background: @on-tertiary-container;
+   color: @tertiary-container;
+}
+.surface {
+   background: @surface;
+   color: @on-surface;
+}
+.on-surface {
+   background: @on-surface;
+   color: @surface;
+}
+.surface-variant {
+   background: @surface-variant;
+   color: @on-surface-variant;
+}
+.on-surface-variant {
+   background: @on-surface-variant;
+   color: @surface-variant;
+}
+.glass {
+   background: @glass;
+   color: @on-glass;
+}
+.on-glass {
+   background: @on-glass;
+   color: @glass;
+}
+.glass-variant {
+   background: @glass-variant;
+   color: @on-glass-variant;
+}
+.on-glass-variant {
+   background: @on-glass-variant;
+   color: @glass-variant;
+}
+.error {
+   background: @error;
+   color: @on-error;
+}
+.on-error {
+   background: @on-error;
+   color: @error;
+}
+.error-container {
+   background: @error-container;
+   color: @on-error-container;
+}
+.on-error-container {
+   background: @on-error-container;
+   color: @error-container;
+}
+.outline {
+   background: @outline;
+   color: @on-background;
+}
+// selection
+.primary>::selection {
+   .on-primary
+}
+//palettelink
+.primary-0 {
+   background: @primary-0;
+   color: @primary-50;
+}
+.primary-5 {
+   background: @primary-5;
+   color: @primary-55;
+}
+.primary-10 {
+   background: @primary-10;
+   color: @primary-60;
+}
+.primary-15 {
+   background: @primary-15;
+   color: @primary-65;
+}
+.primary-20 {
+   background: @primary-20;
+   color: @primary-70;
+}
+.primary-25 {
+   background: @primary-25;
+   color: @primary-75;
+}
+.primary-30 {
+   background: @primary-30;
+   color: @primary-80;
+}
+.primary-35 {
+   background: @primary-35;
+   color: @primary-85;
+}
+.primary-40 {
+   background: @primary-40;
+   color: @primary-90;
+}
+.primary-45 {
+   background: @primary-45;
+   color: @primary-95;
+}
+.primary-50 {
+   background: @primary-50;
+   color: @primary-100;
+}
+.primary-55 {
+   background: @primary-55;
+   color: @primary-0;
+}
+.primary-60 {
+   background: @primary-60;
+   color: @primary-5;
+}
+.primary-65 {
+   background: @primary-65;
+   color: @primary-10;
+}
+.primary-70 {
+   background: @primary-70;
+   color: @primary-15;
+}
+.primary-75 {
+   background: @primary-75;
+   color: @primary-20;
+}
+.primary-80 {
+   background: @primary-80;
+   color: @primary-25;
+}
+.primary-85 {
+   background: @primary-85;
+   color: @primary-30;
+}
+.primary-90 {
+   background: @primary-90;
+   color: @primary-35;
+}
+.primary-95 {
+   background: @primary-95;
+   color: @primary-40;
+}
+.primary-100 {
+   background: @primary-100;
+   color: @primary-45;
+}
+.secondary-0 {
+   background: @secondary-0;
+   color: @secondary-50;
+}
+.secondary-5 {
+   background: @secondary-5;
+   color: @secondary-55;
+}
+.secondary-10 {
+   background: @secondary-10;
+   color: @secondary-60;
+}
+.secondary-15 {
+   background: @secondary-15;
+   color: @secondary-65;
+}
+.secondary-20 {
+   background: @secondary-20;
+   color: @secondary-70;
+}
+.secondary-25 {
+   background: @secondary-25;
+   color: @secondary-75;
+}
+.secondary-30 {
+   background: @secondary-30;
+   color: @secondary-80;
+}
+.secondary-35 {
+   background: @secondary-35;
+   color: @secondary-85;
+}
+.secondary-40 {
+   background: @secondary-40;
+   color: @secondary-90;
+}
+.secondary-45 {
+   background: @secondary-45;
+   color: @secondary-95;
+}
+.secondary-50 {
+   background: @secondary-50;
+   color: @secondary-100;
+}
+.secondary-55 {
+   background: @secondary-55;
+   color: @secondary-0;
+}
+.secondary-60 {
+   background: @secondary-60;
+   color: @secondary-5;
+}
+.secondary-65 {
+   background: @secondary-65;
+   color: @secondary-10;
+}
+.secondary-70 {
+   background: @secondary-70;
+   color: @secondary-15;
+}
+.secondary-75 {
+   background: @secondary-75;
+   color: @secondary-20;
+}
+.secondary-80 {
+   background: @secondary-80;
+   color: @secondary-25;
+}
+.secondary-85 {
+   background: @secondary-85;
+   color: @secondary-30;
+}
+.secondary-90 {
+   background: @secondary-90;
+   color: @secondary-35;
+}
+.secondary-95 {
+   background: @secondary-95;
+   color: @secondary-40;
+}
+.secondary-100 {
+   background: @secondary-100;
+   color: @secondary-45;
+}
+.tertiary-0 {
+   background: @tertiary-0;
+   color: @tertiary-50;
+}
+.tertiary-5 {
+   background: @tertiary-5;
+   color: @tertiary-55;
+}
+.tertiary-10 {
+   background: @tertiary-10;
+   color: @tertiary-60;
+}
+.tertiary-15 {
+   background: @tertiary-15;
+   color: @tertiary-65;
+}
+.tertiary-20 {
+   background: @tertiary-20;
+   color: @tertiary-70;
+}
+.tertiary-25 {
+   background: @tertiary-25;
+   color: @tertiary-75;
+}
+.tertiary-30 {
+   background: @tertiary-30;
+   color: @tertiary-80;
+}
+.tertiary-35 {
+   background: @tertiary-35;
+   color: @tertiary-85;
+}
+.tertiary-40 {
+   background: @tertiary-40;
+   color: @tertiary-90;
+}
+.tertiary-45 {
+   background: @tertiary-45;
+   color: @tertiary-95;
+}
+.tertiary-50 {
+   background: @tertiary-50;
+   color: @tertiary-100;
+}
+.tertiary-55 {
+   background: @tertiary-55;
+   color: @tertiary-0;
+}
+.tertiary-60 {
+   background: @tertiary-60;
+   color: @tertiary-5;
+}
+.tertiary-65 {
+   background: @tertiary-65;
+   color: @tertiary-10;
+}
+.tertiary-70 {
+   background: @tertiary-70;
+   color: @tertiary-15;
+}
+.tertiary-75 {
+   background: @tertiary-75;
+   color: @tertiary-20;
+}
+.tertiary-80 {
+   background: @tertiary-80;
+   color: @tertiary-25;
+}
+.tertiary-85 {
+   background: @tertiary-85;
+   color: @tertiary-30;
+}
+.tertiary-90 {
+   background: @tertiary-90;
+   color: @tertiary-35;
+}
+.tertiary-95 {
+   background: @tertiary-95;
+   color: @tertiary-40;
+}
+.tertiary-100 {
+   background: @tertiary-100;
+   color: @tertiary-45;
+}
+.error-0 {
+   background: @error-0;
+   color: @error-50;
+}
+.error-5 {
+   background: @error-5;
+   color: @error-55;
+}
+.error-10 {
+   background: @error-10;
+   color: @error-60;
+}
+.error-15 {
+   background: @error-15;
+   color: @error-65;
+}
+.error-20 {
+   background: @error-20;
+   color: @error-70;
+}
+.error-25 {
+   background: @error-25;
+   color: @error-75;
+}
+.error-30 {
+   background: @error-30;
+   color: @error-80;
+}
+.error-35 {
+   background: @error-35;
+   color: @error-85;
+}
+.error-40 {
+   background: @error-40;
+   color: @error-90;
+}
+.error-45 {
+   background: @error-45;
+   color: @error-95;
+}
+.error-50 {
+   background: @error-50;
+   color: @error-100;
+}
+.error-55 {
+   background: @error-55;
+   color: @error-0;
+}
+.error-60 {
+   background: @error-60;
+   color: @error-5;
+}
+.error-65 {
+   background: @error-65;
+   color: @error-10;
+}
+.error-70 {
+   background: @error-70;
+   color: @error-15;
+}
+.error-75 {
+   background: @error-75;
+   color: @error-20;
+}
+.error-80 {
+   background: @error-80;
+   color: @error-25;
+}
+.error-85 {
+   background: @error-85;
+   color: @error-30;
+}
+.error-90 {
+   background: @error-90;
+   color: @error-35;
+}
+.error-95 {
+   background: @error-95;
+   color: @error-40;
+}
+.error-100 {
+   background: @error-100;
+   color: @error-45;
+}
+.surface-0 {
+   background: @surface-0;
+   color: @surface-50;
+}
+.surface-5 {
+   background: @surface-5;
+   color: @surface-55;
+}
+.surface-10 {
+   background: @surface-10;
+   color: @surface-60;
+}
+.surface-15 {
+   background: @surface-15;
+   color: @surface-65;
+}
+.surface-20 {
+   background: @surface-20;
+   color: @surface-70;
+}
+.surface-25 {
+   background: @surface-25;
+   color: @surface-75;
+}
+.surface-30 {
+   background: @surface-30;
+   color: @surface-80;
+}
+.surface-35 {
+   background: @surface-35;
+   color: @surface-85;
+}
+.surface-40 {
+   background: @surface-40;
+   color: @surface-90;
+}
+.surface-45 {
+   background: @surface-45;
+   color: @surface-95;
+}
+.surface-50 {
+   background: @surface-50;
+   color: @surface-100;
+}
+.surface-55 {
+   background: @surface-55;
+   color: @surface-0;
+}
+.surface-60 {
+   background: @surface-60;
+   color: @surface-5;
+}
+.surface-65 {
+   background: @surface-65;
+   color: @surface-10;
+}
+.surface-70 {
+   background: @surface-70;
+   color: @surface-15;
+}
+.surface-75 {
+   background: @surface-75;
+   color: @surface-20;
+}
+.surface-80 {
+   background: @surface-80;
+   color: @surface-25;
+}
+.surface-85 {
+   background: @surface-85;
+   color: @surface-30;
+}
+.surface-90 {
+   background: @surface-90;
+   color: @surface-35;
+}
+.surface-95 {
+   background: @surface-95;
+   color: @surface-40;
+}
+.surface-100 {
+   background: @surface-100;
+   color: @surface-45;
+}
+.surface-variant-0 {
+   background: @surface-variant-0;
+   color: @surface-variant-50;
+}
+.surface-variant-5 {
+   background: @surface-variant-5;
+   color: @surface-variant-55;
+}
+.surface-variant-10 {
+   background: @surface-variant-10;
+   color: @surface-variant-60;
+}
+.surface-variant-15 {
+   background: @surface-variant-15;
+   color: @surface-variant-65;
+}
+.surface-variant-20 {
+   background: @surface-variant-20;
+   color: @surface-variant-70;
+}
+.surface-variant-25 {
+   background: @surface-variant-25;
+   color: @surface-variant-75;
+}
+.surface-variant-30 {
+   background: @surface-variant-30;
+   color: @surface-variant-80;
+}
+.surface-variant-35 {
+   background: @surface-variant-35;
+   color: @surface-variant-85;
+}
+.surface-variant-40 {
+   background: @surface-variant-40;
+   color: @surface-variant-90;
+}
+.surface-variant-45 {
+   background: @surface-variant-45;
+   color: @surface-variant-95;
+}
+.surface-variant-50 {
+   background: @surface-variant-50;
+   color: @surface-variant-100;
+}
+.surface-variant-55 {
+   background: @surface-variant-55;
+   color: @surface-variant-0;
+}
+.surface-variant-60 {
+   background: @surface-variant-60;
+   color: @surface-variant-5;
+}
+.surface-variant-65 {
+   background: @surface-variant-65;
+   color: @surface-variant-10;
+}
+.surface-variant-70 {
+   background: @surface-variant-70;
+   color: @surface-variant-15;
+}
+.surface-variant-75 {
+   background: @surface-variant-75;
+   color: @surface-variant-20;
+}
+.surface-variant-80 {
+   background: @surface-variant-80;
+   color: @surface-variant-25;
+}
+.surface-variant-85 {
+   background: @surface-variant-85;
+   color: @surface-variant-30;
+}
+.surface-variant-90 {
+   background: @surface-variant-90;
+   color: @surface-variant-35;
+}
+.surface-variant-95 {
+   background: @surface-variant-95;
+   color: @surface-variant-40;
+}
+.surface-variant-100 {
+   background: @surface-variant-100;
+   color: @surface-variant-45;
+}
+.glass-0 {
+   background: @glass-0;
+   color: @glass-50;
+}
+.glass-5 {
+   background: @glass-5;
+   color: @glass-55;
+}
+.glass-10 {
+   background: @glass-10;
+   color: @glass-60;
+}
+.glass-15 {
+   background: @glass-15;
+   color: @glass-65;
+}
+.glass-20 {
+   background: @glass-20;
+   color: @glass-70;
+}
+.glass-25 {
+   background: @glass-25;
+   color: @glass-75;
+}
+.glass-30 {
+   background: @glass-30;
+   color: @glass-80;
+}
+.glass-35 {
+   background: @glass-35;
+   color: @glass-85;
+}
+.glass-40 {
+   background: @glass-40;
+   color: @glass-90;
+}
+.glass-45 {
+   background: @glass-45;
+   color: @glass-95;
+}
+.glass-50 {
+   background: @glass-50;
+   color: @glass-100;
+}
+.glass-55 {
+   background: @glass-55;
+   color: @glass-0;
+}
+.glass-60 {
+   background: @glass-60;
+   color: @glass-5;
+}
+.glass-65 {
+   background: @glass-65;
+   color: @glass-10;
+}
+.glass-70 {
+   background: @glass-70;
+   color: @glass-15;
+}
+.glass-75 {
+   background: @glass-75;
+   color: @glass-20;
+}
+.glass-80 {
+   background: @glass-80;
+   color: @glass-25;
+}
+.glass-85 {
+   background: @glass-85;
+   color: @glass-30;
+}
+.glass-90 {
+   background: @glass-90;
+   color: @glass-35;
+}
+.glass-95 {
+   background: @glass-95;
+   color: @glass-40;
+}
+.glass-100 {
+   background: @glass-100;
+   color: @glass-45;
+}
+.glass-variant-0 {
+   background: @glass-variant-0;
+   color: @glass-variant-50;
+}
+.glass-variant-5 {
+   background: @glass-variant-5;
+   color: @glass-variant-55;
+}
+.glass-variant-10 {
+   background: @glass-variant-10;
+   color: @glass-variant-60;
+}
+.glass-variant-15 {
+   background: @glass-variant-15;
+   color: @glass-variant-65;
+}
+.glass-variant-20 {
+   background: @glass-variant-20;
+   color: @glass-variant-70;
+}
+.glass-variant-25 {
+   background: @glass-variant-25;
+   color: @glass-variant-75;
+}
+.glass-variant-30 {
+   background: @glass-variant-30;
+   color: @glass-variant-80;
+}
+.glass-variant-35 {
+   background: @glass-variant-35;
+   color: @glass-variant-85;
+}
+.glass-variant-40 {
+   background: @glass-variant-40;
+   color: @glass-variant-90;
+}
+.glass-variant-45 {
+   background: @glass-variant-45;
+   color: @glass-variant-95;
+}
+.glass-variant-50 {
+   background: @glass-variant-50;
+   color: @glass-variant-100;
+}
+.glass-variant-55 {
+   background: @glass-variant-55;
+   color: @glass-variant-0;
+}
+.glass-variant-60 {
+   background: @glass-variant-60;
+   color: @glass-variant-5;
+}
+.glass-variant-65 {
+   background: @glass-variant-65;
+   color: @glass-variant-10;
+}
+.glass-variant-70 {
+   background: @glass-variant-70;
+   color: @glass-variant-15;
+}
+.glass-variant-75 {
+   background: @glass-variant-75;
+   color: @glass-variant-20;
+}
+.glass-variant-80 {
+   background: @glass-variant-80;
+   color: @glass-variant-25;
+}
+.glass-variant-85 {
+   background: @glass-variant-85;
+   color: @glass-variant-30;
+}
+.glass-variant-90 {
+   background: @glass-variant-90;
+   color: @glass-variant-35;
+}
+.glass-variant-95 {
+   background: @glass-variant-95;
+   color: @glass-variant-40;
+}
+.glass-variant-100 {
+   background: @glass-variant-100;
+   color: @glass-variant-45;
+}

@@ -18,7 +18,7 @@ if (mode == undefined) {
    localStorage.setItem('darkMode', mode);
 }
 var M = Mushroom();
-M.setColor('hsl(0,0%,100%)');
+M.setColor('hsl(0,0%,0%)');
 M.setDarkmode(mode);
 body.style.backgroundImage = (mode) ? 'url(/image/bg-dark.png)' : 'url(/image/bg-light.png)';
 function Darkmode() {
