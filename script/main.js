@@ -19,11 +19,11 @@ if (mode == undefined) {
 var M = Mushroom();
 M.setColor('hsl(0,0%,0%)');
 M.setDarkmode(mode);
-body.style.backgroundImage = (mode) ? 'url(image/bg-dark.png)' : 'url(image/bg-light.png)';
+body.style.backgroundImage = (mode) ? 'url(../image/bg-dark.png)' : 'url(image/bg-light.png)';
 function Darkmode() {
    M.toggleMode();
    localStorage.setItem('darkMode', M.darkmode);
-   body.style.backgroundImage = (M.darkmode) ? 'url(image/bg-dark.png)' : 'url(image/bg-light.png)';
+   body.style.backgroundImage = (M.darkmode) ? 'url(../image/bg-dark.png)' : 'url(../image/bg-light.png)';
 }
 
 file.onchange = () => {
