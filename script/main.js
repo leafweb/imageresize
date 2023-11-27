@@ -11,7 +11,6 @@ var upload = document.querySelector('#upload');
 var width = document.querySelector('#width');
 var height = document.querySelector('#height');
 var warn = document.querySelector('#warn');
-
 var mode = eval(localStorage.getItem('darkMode'));
 if (mode == undefined) {
    mode = false;
