@@ -13,7 +13,7 @@ ripple.forEach(elm => {
       ripple.style.aspectRatio = '1/1';
       ripple.style.background = 'currentColor';
       ripple.style.borderRadius = '100%';
-      ripple.style.animationTimingFunction = 'aese-out';
+      ripple.style.animationTimingFunction = 'ease-out';
       ripple.style.top = y;
       ripple.style.left = x;
       var h = Number(window.getComputedStyle(elm).height.replace('px', ''));
@@ -36,9 +36,9 @@ ripple.forEach(elm => {
          var h = Number(window.getComputedStyle(elm).height.replace('px', ''));
          var w = Number(window.getComputedStyle(elm).width.replace('px', ''));
          if (w >= h) {
-            var animation = ripple.animate({ opacity: '0', width: '400%' }, { fill: "both", duration: 1500, })
+            var animation = ripple.animate({ opacity: '0'}, { fill: "both", duration: 800, })
          } else {
-            var animation = ripple.animate({ opacity: '0', height: '400%' }, { fill: "both", duration: 1500, })
+            var animation = ripple.animate({ opacity: '0'}, { fill: "both", duration: 800, })
          }
          animation.play();
          animation.onfinish = () => {
