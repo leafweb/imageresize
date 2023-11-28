@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 1000.0 1000.0"
+	enable-background="new 0 0 1000.0 1000.0"
+	xml:space="preserve">
+<defs>
+	<linearGradient id="fillGrad0" x1="100.000%" y1="0.000%" x2="-0.000%" y2="100.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,255,255);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(168,168,168);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad9" x1="-0.000%" y1="100.000%" x2="100.000%" y2="-33.333%">
+   		<stop offset="0.000%" style="stop-color:rgb(5,5,5);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(203,203,203);stop-opacity:1.000" />
+	</linearGradient>
+
+	<radialGradient id="fillGrad10" cx="50.000%" cy="100.000%" fx="50.000%" fy="100.000%" r="100.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,255,255);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(189,189,189);stop-opacity:1.000" />
+	</radialGradient>
+
+	<linearGradient id="fillGrad11" x1="74.195%" y1="-10.556%" x2="32.478%" y2="100.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(26,26,26);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(212,212,212);stop-opacity:1.000" />
+	</linearGradient>
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'GoogleSans-Regular'; 
+			src: url('./GoogleSans-Regular.ttf');
+		}
+	</style>
+</defs>
+	<path
+		transform = "rotate(-0.00 500.00 500.00)"
+		fill="url(#fillGrad0)"
+		stroke="#000000"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M300.00,100.00L700.00,100.00A200.00 200.00 0 0 1 900.00,300.00L900.00,700.00A200.00 200.00 0 0 1 700.00,900.00L300.00,900.00A200.00 200.00 0 0 1 100.00,700.00L100.00,300.00A200.00 200.00 0 0 1 300.00,100.00z"/>
+	<path
+		transform = "rotate(-0.00 500.00 600.00)"
+		fill="url(#fillGrad9)"
+		stroke="#000000"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M900.00,700.00C800.00,300.00,300.00,700.00,100.00,300.00L100.00,700.00Q100.00,900.00,300.00,900.00L700.00,900.00Q900.00,900.00,900.00,700.00z"/>
+	<path
+		transform = "rotate(-0.00 500.00 500.00)"
+		fill="url(#fillGrad10)"
+		stroke="#000000"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M500.00,300.00C610.46,300.00,700.00,389.54,700.00,500.00C700.00,610.46,610.46,700.00,500.00,700.00C389.54,700.00,300.00,610.46,300.00,500.00C300.00,389.54,389.54,300.00,500.00,300.00z"/> 
+
+	<text 
+		font-size="293.99274"
+		font-family="GoogleSans-Regular"
+		fill="url(#fillGrad11)"
+		stroke-width="0"
+		fill-opacity="1.0"
+		text-anchor="start"
+		font-weight="bold"
+   		transform="rotate(-0.0 500.0 516.74915) scale(0.9268529 1.0)" >
+
+		<tspan x="370.56143" y="604.0286">64</tspan>
+	</text>
+</svg>
